@@ -6,6 +6,19 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 }
 
+h1, h2, h3, h4, p {
+    color: #666666;
+}
+
+body h1 {
+    margin: 0;
+}
+
+body h2 {
+    margin: 12px 0 18px 0;
+    font-size: 25px;
+}
+
 .navbar {
     margin-top: 5px;
     margin-bottom: 0;
@@ -55,6 +68,21 @@ body {
     margin-left: 3px;
     list-style: none;
     background-color: transparent;
+    font-weight: 300;
+}
+
+.panel {
+    padding: 5px;
+}
+
+.panel h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.panel p {
+    margin-top: 5px;
+    font-size: 18px;
     font-weight: 300;
 }
 
