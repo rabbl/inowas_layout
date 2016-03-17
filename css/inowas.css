@@ -7,6 +7,8 @@ body {
 }
 
 .navbar {
+    margin-top: 5px;
+    margin-bottom: 0;
     background: transparent;
     border-color: transparent;
 }
@@ -33,8 +35,8 @@ body {
 }
 
 .navbar-right .dropdown-toggle{
-    padding: 6px;
-    margin: 10px;
+    padding: 5px;
+    margin: 8px;
     border: 1px solid #777;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -46,5 +48,13 @@ body {
 .navbar-default .navbar-nav>.active>a:hover {
     color: #00ACE4;
     background: none;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-left: 3px;
+    list-style: none;
+    background-color: transparent;
+    font-weight: 300;
 }
 
