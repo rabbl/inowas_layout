@@ -66,10 +66,12 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h3>Choose a modelname</h3>
-                        <p>Give your models a identifying name you will
-                            remember them by.</p>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Modelname">
+                            <label for="modelname">
+                                Give your models a identifying name you will
+                                remember them by.
+                            </label>
+                            <input id="modelname" type="text" class="form-control" placeholder="Modelname">
                         </div>
                     </div>
                 </div>
@@ -78,12 +80,12 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h3>Description</h3>
-                        <p>
-                            Write a short description to remember and introduce others
-                            your ideas.
-                        </p>
                         <div class="form-group">
-                            <textarea class="form-control" rows="2" id="comment"></textarea>
+                            <label for="description">
+                                Write a short description to remember and introduce others
+                                your ideas.
+                            </label>
+                            <textarea class="form-control" rows="2" id="description"></textarea>
                         </div>
                     </div>
                 </div>
@@ -95,7 +97,6 @@
         <ul class="nav nav-tabs">
             <li role="presentation" class="active"><a href="#">My submitted <br>model areas</a></li>
             <li role="presentation"><a href="#">Public <br> model areas</a></li>
-            <li role="presentation"><a href="#">Add <br>model area</a></li>
         </ul>
 
         <div class="row">
@@ -110,13 +111,13 @@
                 </button>
             </div>
             <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                <button type="button" class="btn btn-default btn-block active" data-toggle="button" aria-pressed="false">
                     Hanoi 3
                 </button>
             </div>
             <div class="col-xs-3">
                 <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
-                    Hanoi 4
+                    <i class="fa fa-plus-circle"></i> Add Area
                 </button>
             </div>
         </div>
@@ -136,6 +137,170 @@
                 </div>
             </div>
         </div>
+
+
+        <h2>Select soil model</h2>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">My submitted <br>soil models</a></li>
+            <li role="presentation"><a href="#">Public <br> soil models</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    Soil Model Hanoi 1
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block active" data-toggle="button" aria-pressed="false">
+                    Soil Model Hanoi 2
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    Soil Model Hanoi 3
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    <i class="fa fa-plus-circle"></i> Add Soil Model
+                </button>
+            </div>
+        </div>
+
+        <div class="row equal top-margin-20">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Soil model information</h3>
+                        <p>Here should be displayed all type of necessary Information about the Soil Model</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div id="soil-model-map" class="panel-body map"></div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Select streams</h2>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">My submitted <br>streams</a></li>
+            <li role="presentation"><a href="#">Public <br> streams</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    <i class="fa fa-plus-circle"></i> Add Stream
+                </button>
+            </div>
+        </div>
+
+        <h2>Select boundaries</h2>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">My submitted <br>boundaries</a></li>
+            <li role="presentation"><a href="#">Public <br> boundaries</a></li>
+            <li role="presentation"><a href="#">Add <br>boundary</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    <i class="fa fa-plus-circle"></i> Add Boundary
+                </button>
+            </div>
+        </div>
+
+        <h2>Set initial conditions</h2>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">My submitted <br>initial conditions</a></li>
+            <li role="presentation"><a href="#">Public <br> initial conditions</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-default btn-block" data-toggle="button" aria-pressed="false">
+                    <i class="fa fa-plus-circle"></i> Add Initial Condition
+                </button>
+            </div>
+        </div>
+
+        <h2>Set calculation properties</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Choose a meshsize</h3>
+                        <div class="form-group">
+                            <label for="meshsize">
+                                Select a mesh size for calculation.
+                                Please note, a small size gives faster
+                                results and a big mesh size gives
+                                more accurate results.
+                            </label>
+                            <select id="meshsize" class="form-control">
+                                <option>Smalles mesh (15x15)</option>
+                                <option>Small mesh (30x30)</option>
+                                <option selected>Normal mesh (50x50)</option>
+                                <option>Big mesh (100x100)</option>
+                                <option>Biggest mesh (1000x1000)</option>
+                            </select>
+                        </div>
+                        <div id="mesh-map" class="panel-body mesh-map"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Choose number of stress periods</h3>
+                        <div class="form-group">
+                            <label for="stress_periods">
+                                Select the number of stress periods.Here can come some more text to explain why
+                                the number of stress periods is so important.
+                            </label>
+                            <select id="stress_periods" class="form-control">
+                                <option>10</option>
+                                <option>20</option>
+                                <option selected> 30</option>
+                                <option>40</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Choose a solver</h3>
+                        <div class="form-group">
+                            <label for="solver">
+                                You can choose from a large number of solvers.
+                                The most recommended one is PCG.
+                            </label>
+                            <select id="solver" class="form-control">
+                                <option selected>PCG (recommended)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-6">
+                <button type="button" class="btn btn-danger btn-block btn-lg">Calculate</button>
+            </div>
+        </div>
+
     </div>
 
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>

@@ -80,14 +80,32 @@ body h2 {
     height: 500px;
 }
 
+.mesh-map {
+    height: 250px;
+}
+
 .panel h3 {
     margin: 0;
     font-size: 20px;
 }
 
+.panel label,
 .panel p {
     margin-top: 5px;
     font-size: 18px;
+    font-weight: 300;
+}
+
+.panel input,
+.panel textarea {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.panel select {
+    margin-top: 5px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -115,7 +133,8 @@ body h2 {
     border: 1px solid transparent;
 }
 
-.btn.active, .btn:active {
+.btn.active,
+.btn:active {
     background-image: none;
     outline: 0;
     -webkit-box-shadow: none;
@@ -129,7 +148,8 @@ body h2 {
 }
 
 .btn.active:focus,
-.btn.active:hover {
+.btn.active:hover,
+.btn:active:focus {
     background-color: #e6e6e6;
 }
 
