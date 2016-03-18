@@ -72,7 +72,12 @@ body h2 {
 }
 
 .panel {
+    width: 100%;
     padding: 5px;
+}
+
+.map {
+    height: 500px;
 }
 
 .panel h3 {
@@ -86,3 +91,40 @@ body h2 {
     font-weight: 300;
 }
 
+.equal, .equal>div[class*='col-'] {
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.nav-tabs {
+    margin-bottom: 20px;
+}
+
+.nav-tabs>li>a
+{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.nav-tabs>li>a:hover
+{
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.btn.active, .btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+}
+
+.top-margin-20 {
+    margin-top: 20px;
+}
