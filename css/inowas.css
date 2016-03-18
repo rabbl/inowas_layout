@@ -91,6 +91,7 @@ body h2 {
     font-weight: 300;
 }
 
+/* Disable with media queries */
 .equal, .equal>div[class*='col-'] {
     display: -webkit-flex;
     display: flex;
@@ -121,7 +122,20 @@ body h2 {
     box-shadow: none;
 }
 
-.btn:focus,.btn:active {
+.btn:active,
+.btn:focus,
+.btn:hover {
+    background: none;
+}
+
+.btn.active:focus,
+.btn.active:hover {
+    background-color: #e6e6e6;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
     outline: none !important;
 }
 
