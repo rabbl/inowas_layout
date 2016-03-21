@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="css/inowas.css" />
+    <link rel="stylesheet" type="text/css" href="css/inowas-d3.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
@@ -296,17 +297,37 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-xs-offset-6">
+            <div class="col-xs-12">
                 <button type="button" class="btn btn-danger btn-block btn-lg">Calculate</button>
             </div>
         </div>
 
+        <h2>Results</h2>
+        <h3>Calculated vs. observed heads</h3>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="graph">
+                            <form>
+                                <label><input type="radio" name="mode" value="grouped"> Grouped</label>
+                                <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="vendor/leaflet/dist/leaflet.js"></script>
+    <script type="text/javascript" src="vendor/d3/d3.min.js"></script>
+
     <script type="text/javascript" src="js/inowas.js"></script>
     <script type="text/javascript" src="js/inowas-leaflet.js"></script>
+    <script type="text/javascript" src="js/inowas-d3.js"></script>
 </body>
 </html>
