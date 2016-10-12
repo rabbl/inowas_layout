@@ -56,6 +56,7 @@
 #scenarios .flip p {
     padding: 5px;
     writing-mode: vertical-lr;
+    white-space: nowrap;
 }
 
 #scenarios .flip {
