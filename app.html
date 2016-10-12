@@ -14,105 +14,147 @@
     </head>
     <body>
         <div class="app">
-            <div id="map"></div>
-            <div id="toolbox">
-                <div class="heading toolbox-element">
-                    <h4>
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-content">RIO PRIMERO</a>
-                        <i class="fa fa-bars pull-left" aria-hidden="true"></i>
-                    </h4>
-                </div>
-
-                <div id="toolbox-content" class="collapse">
-                    <p class="description">Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
-
-                    <div class="toolbox-element">
-                        <h4><a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-summary">Model Summary</a></h4>
-                    </div>
-
-                    <div id="toolbox-summary" class="panel-collapse collapse">
-                        <div class="panel-body">Toolbox summary content</div>
-                    </div>
-
-                    <div class="toolbox-element">
-                        <h4><a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-area">Model Area</a></h4>
-                    </div>
-
-                    <div id="toolbox-area" class="panel-collapse collapse">
-                        <div class="panel-body">Model Area content</div>
-                    </div>
-
-                    <div class="toolbox-element">
-                        <h4><a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-soilmodel">Soilmodel</a></h4>
-                    </div>
-
-                    <div id="toolbox-soilmodel" class="panel-collapse collapse">
-                        <div class="panel-body">Soilmodel content</div>
-                    </div>
-
-                    <div class="toolbox-element">
-                        <h4><a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-boundaries">Boundaries</a></h4>
-                    </div>
-
-                    <div id="toolbox-boundaries" class="panel-collapse collapse">
-                        <div class="panel-body">Boundaries content</div>
-                    </div>
-
-                    <div class="toolbox-element">
-                        <h4><a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-properties">Model Properties</a></h4>
-                    </div>
-
-                    <div id="toolbox-properties" class="panel-collapse collapse">
-                        <div class="panel-body">Model properties content</div>
-                    </div>
-                </div>
-            </div>
-            <div id="scenarios">
-                <div class="panel">
-                    <div class="list-group">
-                        <div class="list-group-item list-group-item-action inactive_scenario">
-                        </div>
-                        <a href="#" class="list-group-item list-group-item-action inactive_scenario">
-                            <div class="row">
-                                <div class="col-sm-4 image">
-                                    <img src="http://www.fillmurray.com/300/300" class="img-responsive" alt="Cinque Terre">
-                                </div>
-                                <div class="col-sm-8">
-                                    <h1>Scenario 0: Base Scenario</h1>
-                                    <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action active_scenario">
-                            <div class="row">
-                                <div class="col-sm-4 image">
-                                    <img src="http://www.fillmurray.com/200/200" class="img-responsive" alt="Cinque Terre">
-                                </div>
-                                <div class="col-sm-8">
-                                    <h1>Scenario 0: Base Scenario</h1>
-                                    <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action inactive_scenario">
-                            <div class="row">
-                                <div class="col-sm-4 image">
-                                    <img src="http://www.fillmurray.com/500/500" class="img-responsive" alt="Cinque Terre">
-                                </div>
-                                <div class="col-sm-8">
-                                    <h1>Scenario 0: Base Scenario</h1>
-                                    <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div id="models">
                 <div class="flip">
-                    <div class="bottom">
-                        <p>Base Model | Scenarios</p>
+                    <div class="models_label">
+                        <p>Models</p>
                     </div>
                 </div>
             </div>
+            <div id="map">
+                <div id="models_label">
+                    <p>Models</p>
+
+                </div>
+                <div id="sidebar">
+                    <div id="toolbox">
+                        <div class="heading toolbox-element">
+                            <h3>
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-content">RIO PRIMERO</a>
+                                <i class="fa fa-bars pull-left" aria-hidden="true"></i>
+                            </h3>
+                        </div>
+
+                        <div id="toolbox-content" class="collapse">
+                            <p class="description">Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-area">Model Area</a>
+                                    <i class="fa fa-object-group pull-left" aria-hidden="true"></i>
+                                </h4>
+
+                            </div>
+
+                            <div id="toolbox-area" class="panel-collapse collapse">
+                                <div class="panel-body">Model Area content</div>
+                            </div>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-soilmodel">Soilmodel</a>
+                                    <i class="fa fa-ellipsis-h pull-left" aria-hidden="true"></i>
+                                </h4>
+                            </div>
+
+                            <div id="toolbox-soilmodel" class="panel-collapse collapse">
+                                <div class="panel-body">Soilmodel content</div>
+                            </div>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-boundaries">Boundaries</a>
+                                    <i class="fa fa-thumb-tack pull-left" aria-hidden="true"></i>
+                                </h4>
+                            </div>
+
+                            <div id="toolbox-boundaries" class="panel-collapse collapse">
+                                <div class="panel-body">Boundaries content</div>
+                            </div>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-properties">Model Properties</a>
+                                    <i class="fa fa-wheelchair-alt pull-left" aria-hidden="true"></i>
+                                </h4>
+                            </div>
+
+                            <div id="toolbox-properties" class="panel-collapse collapse">
+                                <div class="panel-body">Model Properties</div>
+                            </div>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-calculation">Calculation</a>
+                                    <i class="fa fa-calculator pull-left" aria-hidden="true"></i>
+                                </h4>
+                            </div>
+
+                            <div id="toolbox-calculation" class="panel-collapse collapse">
+                                <div class="panel-body">Model Calculation</div>
+                            </div>
+
+                            <div class="toolbox-element">
+                                <h4>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" href="#toolbox-results">Results</a>
+                                    <i class="fa fa-bar-chart pull-left" aria-hidden="true"></i>
+                                </h4>
+                            </div>
+
+                            <div id="toolbox-results" class="panel-collapse collapse">
+                                <div class="panel-body">Results</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="scenarios">
+                    <div class="panel">
+                        <div class="list-group">
+                            <div class="list-group-item list-group-item-action inactive_scenario">
+                            </div>
+                            <a href="#" class="list-group-item list-group-item-action inactive_scenario">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img src="http://www.fillmurray.com/300/300" class="img-responsive" alt="Cinque Terre">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h1>Scenario 0: Base Scenario</h1>
+                                        <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action active_scenario">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img src="http://www.fillmurray.com/200/200" class="img-responsive" alt="Cinque Terre">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h1>Scenario 0: Base Scenario</h1>
+                                        <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action inactive_scenario">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img src="http://www.fillmurray.com/500/500" class="img-responsive" alt="Cinque Terre">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h1>Scenario 0: Base Scenario</h1>
+                                        <p>Application of managed aquifer recharge for maximization of water storage capacity in Rio Primero area of Argentina.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flip">
+                        <div class="scenarios_label">
+                            <p>Base Model | Scenarios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
@@ -126,21 +168,38 @@
 
 <script>
     $(document).ready(function(){
-        var r=0, open=false;
+        var r=0, open_scenarios=false;
         $('#scenarios').find('.flip').click(function() {
-            open = !open;
+            open_scenarios = !open_scenarios;
 
-            if (open) {
+            if (open_scenarios) {
                 r = 0;
                 $( "#toolbox" ).fadeOut( "fast" );
+                $( "#models_label" ).fadeOut( "fast" );
                 $("#scenarios").stop().animate({left: r+'px'}, 800);
             }
 
-            if (!open){
+            if (!open_scenarios){
                 r = -500;
                 $("#scenarios").stop().animate({left: r+'px'}, 800);
                 $( "#toolbox" ).fadeIn( "fast" );
+                $( "#models_label" ).fadeIn( "fast" );
             }
         });
+
+        var h=0, open_models=false;
+        $('#models_label').click(function() {
+            open_models = !open_models;
+            if (!open_models) {
+                h = 0;
+                $("#models").stop().animate({height: h+'px'}, 800);
+            }
+
+            if (open_models){
+                h = $( window ).height()-40;
+                $("#models").stop().animate({height: h+'px'}, 800);
+            }
+        });
+
     });
 </script>

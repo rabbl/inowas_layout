@@ -39,6 +39,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
 }
+
 .layers h4 {
     margin: 0 0 5px;
     color: #777;
@@ -48,9 +49,9 @@
     position:absolute;
     top: 0;
     left: -500px;
-    height:100%;
+    height: 100%;
+    z-index: 10;
 }
-
 
 #scenarios .flip p {
     padding: 5px;
@@ -65,7 +66,7 @@
     cursor: pointer;
 }
 
-#scenarios .flip .bottom{
+#scenarios .flip .scenarios_label{
     color: white;
     border: 1px solid white;
     background-color: deepskyblue;
@@ -108,23 +109,70 @@
     opacity: 1;
 }
 
-#toolbox {
+#scenarios img {
+    width: 100%;
+}
+
+.heading h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#sidebar {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+}
+
+#toolbox {
     width: 300px;
     background: rgba(200,200,200,0.5);
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border: 2px solid #FFFFFF;
+    margin-bottom: 10px;
 }
 
-#toolbox .toolbox-element {
+#models {
+    height: 0;
+}
+
+#models_label {
+    color: white;
+    border: 1px solid white;
+    background-color: deepskyblue;
+    cursor: pointer;
+    position: absolute;
+    left: 40px;
+    z-index: 2;
+}
+
+#models_label p {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 0;
+}
+
+#toolbox-content p{
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.toolbox-element,
+.models-element {
     margin: 0 10px;
 }
 
-#toolbox .toolbox-element a {
+.toolbox-element h4 {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.toolbox-element a,
+.models-element a {
     text-decoration: none;
     color: black;
 }
@@ -136,15 +184,15 @@
 
 .accordion-toggle:after {
     /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+    content: "\f107";    /* adjust as needed, taken from bootstrap.css */
     float: right;        /* adjust as needed */
     color: grey;         /* adjust as needed */
 }
 
 .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\f105";    /* adjust as needed, taken from bootstrap.css */
 }
 
 
