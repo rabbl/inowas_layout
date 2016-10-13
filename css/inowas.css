@@ -141,18 +141,19 @@
 
 #models {
     height: 0;
+    overflow: hidden;
+
 }
 
 #logo {
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
 }
 
 .logo {
     display: block;
     margin: 0 auto;
-    z-index: 10;
 }
 
 #models_label {
@@ -167,8 +168,13 @@
 
 #models_label p {
     font-size: 1.2em;
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
     margin: 0;
+    z-index: 2;
+}
+
+#models_label .icon {
+    padding: 0 5px 2px 5px;
 }
 
 #toolbox-content p{
@@ -195,6 +201,10 @@
 #toolbox .description {
     background: rgba(255,255,255,0.8);
     padding: 10px;
+}
+
+#toolbox .icon {
+    padding: 0 4px 2px 0;
 }
 
 .accordion-toggle:after {
