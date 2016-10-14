@@ -13,7 +13,6 @@ $(window).on("resize", function() {
     map.invalidateSize();
 }).trigger("resize");
 
-
 var info = L.control();
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'layers'); // create a div with a class "info"
