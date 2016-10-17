@@ -139,6 +139,27 @@
     margin-bottom: 10px;
 }
 
+#toolbox .boundary_list_item{
+    padding: 5px 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#toolbox .boundary_list_item .tools_menu {
+    top:0;
+    position: absolute;
+    left: 102%;
+    width: 200px;
+}
+
+#toolbox .boundary_list_item .tools_menu img {
+    margin-left: 4px;
+    display: inline;
+    vertical-align: top;
+    float: none;
+}
+
 #models {
     height: 0;
     overflow: hidden;
