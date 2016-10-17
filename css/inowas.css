@@ -160,6 +160,10 @@
     float: none;
 }
 
+#toolbox .btn-calculation {
+    padding: 10px;
+}
+
 #models {
     height: 0;
     overflow: hidden;
